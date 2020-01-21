@@ -7,7 +7,7 @@ public class DynamicIntegerArray {
 	public DynamicIntegerArray() {
 		//2. Initialize the int array to have 0 elements. 
 		//   This will prevent a null pointer exception
-	
+	int[]
 	}
 	
 	//3. Complete the steps in the add method
