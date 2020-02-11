@@ -7,7 +7,7 @@ public class DynamicIntegerArray {
 	public DynamicIntegerArray() {
 		//2. Initialize the int array to have 0 elements. 
 		//   This will prevent a null pointer exception
-	int[]x = new int [0];
+	x = new int [0];
 	}
 	
 	//3. Complete the steps in the add method
@@ -22,7 +22,7 @@ public class DynamicIntegerArray {
 		//   copy every element from the member array 
 		//   to the new array
 		for (int i = 0; i < x.length; i++) {
-			x[i]= y[i];
+			y[i]= x[i];
 		}
 		//D. set the member array equal to the new array.
 		x = y;
@@ -41,13 +41,14 @@ public class DynamicIntegerArray {
 	public void set(int v, int location) {
 		//A. set the variable at the location passed in to the method
 		//   to the new value v
+		x[location] = v;
 	}
 	
 	//7. Complete the steps in the insert method
 	public void insert(int v, int location) {
 		//A. create and initialize a new int array to be one 
 		//   element longer than the member array
-		
+		int[] z = new int[x.length + 1];
 		//B. Make a for loop that iterates through the new array
 
 			//C. if i is less than location:
