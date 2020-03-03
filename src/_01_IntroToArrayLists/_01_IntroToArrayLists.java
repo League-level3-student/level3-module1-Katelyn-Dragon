@@ -35,7 +35,8 @@ public class _01_IntroToArrayLists {
 		for (int i = 0; i < fruits.size(); i++) {
 			for (int j = 0; j < fruits.get(i).length(); j++) {
 				if(fruits.get(i).charAt(j) == 'e') {
-					System.out.println();
+					System.out.println(fruits.get(i));
+					break;
 				}
 			}
 		}
