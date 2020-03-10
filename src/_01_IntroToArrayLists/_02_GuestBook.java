@@ -2,9 +2,11 @@ package _01_IntroToArrayLists;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class _02_GuestBook implements ActionListener{
@@ -12,6 +14,8 @@ public class _02_GuestBook implements ActionListener{
 	JPanel panel = new JPanel();
 	JButton buttonOne = new JButton("Add Name");
 	JButton buttonTwo = new JButton("View Names");
+	ArrayList<String> names;
+	String guests;
 	public static void main(String[] args) {
 		new _02_GuestBook().create();
 	}
@@ -22,8 +26,19 @@ public class _02_GuestBook implements ActionListener{
 		panel.add(buttonOne);
 		panel.add(buttonTwo);
 		frame.setVisible(true);
+		guests = new String("Guest #");
+		names = new ArrayList<String>();
 		buttonOne.addActionListener(this);
 		buttonTwo.addActionListener(this);
+	}
+	public void addNames() {
+		String newName = JOptionPane.showInputDialog("Insert a new name");
+		names.add(newName);
+	}
+	public void viewNames() {
+		for (int i = 0; i < names.size(); i++) {
+		}
+		JOptionPane.showMessageDialog(null, guests + ":" + names);
 	}
 	// Create a GUI with two buttons. One button reads "Add Name" and the other
 	// button reads "View Names".
@@ -39,7 +54,11 @@ public class _02_GuestBook implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		if (e.getSource() == buttonOne) {
+			addNames();
+		} else if (e.getSource() == buttonTwo) {
+			viewNames();
+		}
 	}
 
 }
