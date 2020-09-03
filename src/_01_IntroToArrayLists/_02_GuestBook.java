@@ -36,9 +36,11 @@ public class _02_GuestBook implements ActionListener{
 		names.add(newName);
 	}
 	public void viewNames() {
+		String list="";
 		for (int i = 0; i < names.size(); i++) {
+			list=list+ "guests #"+ (i+1) +":" + names.get(i)+"\n";
 		}
-		JOptionPane.showMessageDialog(null, guests + ":" + names);
+		JOptionPane.showMessageDialog(null,list);
 	}
 	// Create a GUI with two buttons. One button reads "Add Name" and the other
 	// button reads "View Names".
