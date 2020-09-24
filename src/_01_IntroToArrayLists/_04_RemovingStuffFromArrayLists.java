@@ -35,12 +35,27 @@ public class _04_RemovingStuffFromArrayLists {
 		System.out.println(stuffIFoundInTheYard.size());
 
 		/* TODO 1: Clean out the dirt but keep the delicious worms. */
-		
-		
+		for (int i = 0; i < stuffIFoundInTheYard.size(); i++) {
+			if (condition) {
+				
+			}
+		}
 		
 		
 		System.out.println(stuffIFoundInTheYard.size()); // should be 2
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		ArrayList<Character> truth = new ArrayList<Character>();
 		truth.add('c');
 		truth.add('a');
