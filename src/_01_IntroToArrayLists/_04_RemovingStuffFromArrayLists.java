@@ -38,6 +38,7 @@ public class _04_RemovingStuffFromArrayLists {
 		for (int i = 0; i < stuffIFoundInTheYard.size(); i++) {
 			if (condition) {
 				
+				
 			}
 		}
 		
