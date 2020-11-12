@@ -16,6 +16,11 @@ public class _05_LongChipCompetition {
 
 	public static void main(String[] args) {
 		_05_LongChipCompetition lcc = new _05_LongChipCompetition();
+		lcc.initializeBeatles();
+		for (int i = 0; i < .size; i++) {
+			
+		}
+		
 		
 	}
 	
@@ -32,6 +37,7 @@ public class _05_LongChipCompetition {
 	
 	public ArrayList<Beatle> getTheBand(){
 		return theBeatles;
+		
 	}
 }
 
