@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.net.URL;
 
+import javax.swing.JOptionPane;
+
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
 public class Song {
@@ -26,12 +28,13 @@ public class Song {
 	}
 
 	public void play() {
-		loadFile();
+		JOptionPane.showMessageDialog(null, "Playing " + this.songAddress);
+		/*loadFile();
 		if (songStream != null) {
 			loadPlayer();
 			startSong();
 		} else
-			System.err.println("Unable to load file: " + songAddress);
+			System.err.println("Unable to load file: " + songAddress);*/
 	}
 
 	public void setDuration(int seconds) {
@@ -39,8 +42,9 @@ public class Song {
 	}
 
 	public void stop() {
-		if (mp3Player != null)
-			mp3Player.close();
+		JOptionPane.showMessageDialog(null, "Stopping " + this.songAddress);
+		/*if (mp3Player != null)
+			mp3Player.close();*/
 	}
 
 	private void startSong() {
