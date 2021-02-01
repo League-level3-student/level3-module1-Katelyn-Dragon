@@ -21,12 +21,14 @@ public class _01_IntroToStack {
 		String answer2 = JOptionPane.showInputDialog("Enter another number between 0-100");
 		double anw = Double.parseDouble(answer);
 		double anw2 = Double.parseDouble(answer2);
+		double bigNum = Math.max(anw, anw2);
+		double smallNum = Math.min(anw, anw2);
 		//4. Pop all the elements off of the Stack. Every time a double is popped that is
 		//   between the two numbers entered by the user, print it to the screen.
 		for(int i = 0; i < 100; i++){
 			double y = doubles.pop();
-			if() {
-				
+			if(y < bigNum && y > smallNum) {
+				System.out.println(y);
 		}
 		}
 		
